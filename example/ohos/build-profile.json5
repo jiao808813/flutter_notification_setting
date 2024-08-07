@@ -1,0 +1,53 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/jiao.xinlong/.ohos/config/default_ohos_AkbOg7HGCYaboPGIdhQ7fGW41UDgpkHGDNorEtWLyHs=.cer",
+          "storePassword": "0000001B210C459306F31F50B7F46047AE87A73C224E4E04A3310E3E92BDF0CD2E1798B0F718AA354E9051",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BAA4118B8AB240361235E777E4BB27B4B9A2757CED372B48663F5DCAAAE4E32E75C9D73A56A9B1A",
+          "profile": "/Users/jiao.xinlong/.ohos/config/default_ohos_AkbOg7HGCYaboPGIdhQ7fGW41UDgpkHGDNorEtWLyHs=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/jiao.xinlong/.ohos/config/default_ohos_AkbOg7HGCYaboPGIdhQ7fGW41UDgpkHGDNorEtWLyHs=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flutter_notification_setting",
+      "srcPath": "/Users/jiao.xinlong/my_flutter_package/flutter_packages/packages/flutter_notification_setting/ohos",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
